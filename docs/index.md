@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+@import "{{ site.theme }}";
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
