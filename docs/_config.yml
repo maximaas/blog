@@ -1,11 +1,10 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I am freelance developer. Currently doing more in backend, focused in Python and Django.
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+title: Famicom Reproduction
+description: Recording of my Famicom/NES reproduction work.
+author: Maximaas
+github: https://github.com/maximass
+about: A old school retro freak.
+disqus_shortname: fcrepro
+avatar_url: static/img/avatar.jpg
 
 enableTags: true
 tagarray: []
