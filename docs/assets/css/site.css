@@ -184,7 +184,7 @@ a {
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
-    border-radius: 6px;
+    border-radius: 3px;
     background-color: #fff;
 }
 
@@ -210,5 +210,5 @@ a {
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 23px;
+    font-size: 18px;
 }
