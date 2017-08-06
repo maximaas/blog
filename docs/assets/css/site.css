@@ -190,6 +190,7 @@ a {
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
+    margin-bottom: 30px;
 }
 
 #custom-search-input input{
@@ -214,5 +215,5 @@ a {
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 23px;
+    font-size: 18px;
 }
