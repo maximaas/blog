@@ -186,6 +186,7 @@ a {
     border: solid 1px #E4E4E4;
     border-radius: 3px;
     background-color: #fff;
+    margin-bottom: 30px;
 }
 
 #custom-search-input input{
