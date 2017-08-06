@@ -7,7 +7,9 @@ body {
   padding-top:50px;
 }
 
-
+h3 {
+	margin-top: 10px;
+}
 
 .page-header{
   margin: 10px 0;
@@ -158,12 +160,12 @@ background-color:#0e76a8;
 
 .container h1,h2,h3,h4,h5,h6{
     color: #002e62;
-    
-    margin-top: 10px;
 }
-a{
+
+a {
  color: #002e62;
 }
+
 #main-menu a{
   color:#002e62;
 }
