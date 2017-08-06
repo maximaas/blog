@@ -10,25 +10,62 @@ layout: default
 				  <div class="row">
 				    <div class="col-xs-9 col-sm-9 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 
-		<form action="{{ "/search.html" | prepend: site.baseurl }}" method="get">		
-			<div id="custom-search-input">
-				<div class="input-group col-md-12">
-					<input type="text" id="search-box" name="query" class="form-control input-sm" placeholder="" />
-					<span class="input-group-btn">
-						<button class="btn btn-info btn-lg" type="submit">
-						<i class="glyphicon glyphicon-search"></i>
-						</button>
-					</span>
-				</div>
-			</div
-		</form>
+							<form action="{{ "/search.html" | prepend: site.baseurl }}" method="get">		
+								<div id="custom-search-input">
+									<div class="input-group col-md-12">
+										<input type="text" id="search-box" name="query" class="form-control input-sm" placeholder="" />
+										<span class="input-group-btn">
+											<button class="btn btn-info btn-lg" type="submit">
+											<i class="glyphicon glyphicon-search"></i>
+											</button>
+										</span>
+									</div>
+								</div
+							</form>
 
 				  	</div>
 				  </div>
 				</div>
 
-<ul id="search-results">aaaa</ul>
-
+				<div id="search-results" class="container">
+				  <div class="row">
+				    <div class="col-xs-9 col-sm-9 col-md-offset-0 col-md-8 col-lg-offset-0 col-lg-8">
+				      {% for post in site.posts %}
+				      <div class="blog-short">
+				          <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+								<div>
+									<small>
+										<i class="fa fa-calendar"></i>
+										<time>
+											{{ post.date | date:'%A, %B %d, %Y'}}
+										</time>
+									</small>
+								</div>
+						    <div class="margin10">
+				          <small>
+				            <i class="fa fa-tag"></i>
+				            {% for tag in post.tags %}
+				              <span class="label label-tag">{{tag}}</span>
+				            {% endfor %}
+				          </small>
+				        </div>
+				      {% if post.thumbnail %}
+				        <div class="imgcontainer col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				          <img src="{{post.thumbnail}}"
+				          alt="{{post.title}}"  class="pull-left img-responsive thumb img-thumbnail" />
+				        </div>
+				      {% endif %}
+				        <article class="excerpt">{{post.excerpt}}</article>
+				          <a class="pull-right marginBottom10" href="{{post.url | prepend: site.baseurl }}">Read More</a>
+				      </div>
+				    {% endfor %}
+				    </div>
+				  	<div class="col-xs-3 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
+				  		{% include sidebar.html %}
+				  	</div>
+				  </div>
+				</div>
+				
 <script>
   window.store = {
     {% for post in site.posts %}

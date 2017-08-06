@@ -9,6 +9,15 @@
         var item = store[results[i].ref];
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
         appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        
+        
+				appendString += '      <div class=\"blog-short\">';
+				appendString += '          <h3><a href=\"{{' + item.url + '| prepend: site.baseurl}}\">{{' + item.title + '}}</a></h3>'
+
+				appendString += '      </div>';
+        
+        
+        
       }
 
       searchResults.innerHTML = appendString;
