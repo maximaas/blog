@@ -70,7 +70,7 @@ body {
 
 /*footer*/
 .footer {
-    background-color: #f8f8f8;
+    background: #f8f8f8;
 		position: fixed;
     bottom: 0;
     width: 100%;
