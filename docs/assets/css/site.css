@@ -79,6 +79,10 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
+.footer ul {
+    list-style: none;
+}
+
 /* social buttons */
 /*social buttons */
 .social-btn-holder{
