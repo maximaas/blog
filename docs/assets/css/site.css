@@ -7,10 +7,6 @@ body {
   padding-top:50px;
 }
 
-h1,h3 {
-	-margin-top: 10px;
-}
-
 .page-header{
   margin: 10px 0;
   text-align:center;
@@ -188,9 +184,8 @@ a {
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
-    border-radius: 12px;
+    border-radius: 6px;
     background-color: #fff;
-    margin-bottom: 30px;
 }
 
 #custom-search-input input{
@@ -215,5 +210,5 @@ a {
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 24px;
+    font-size: 23px;
 }
