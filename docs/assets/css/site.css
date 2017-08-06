@@ -77,6 +77,9 @@ body {
     color: #767676;
     text-align: center;
     border-top: 1px solid #e5e5e5;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .footer li{
