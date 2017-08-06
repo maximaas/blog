@@ -15,14 +15,13 @@
 				appendString += '          <h3><a href=\"/blog' + item.url + '\">' + item.title + '</a></h3>';
 				appendString += '				<div>';
 				appendString += '					<small>';
-				appendString += '						<i class="fa fa-calendar"></i>';
+				appendString += '						<i class=\"fa fa-calendar\"></i>';
 				appendString += '						<time>';
 				appendString += 							item.date;
 				appendString += '						</time>';
 				appendString += '					</small>';
 				appendString += '				</div>';
-				appendString += '        <article class="excerpt">' + {{item.excerpt}} + '</article>';
-				appendString += '      </div>
+				appendString += '        <article class=\"excerpt\">' + item.excerpt + '</article>';
 				appendString += '      </div>';
         
         
