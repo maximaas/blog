@@ -16,7 +16,9 @@ body {
   margin: 0;
 }
 
-
+.well {
+	background-color: #f8f8f8;
+}
 /*navbar stuff*/
 .name-holder{
   margin-left:10px;
@@ -44,7 +46,6 @@ body {
     padding-right: 10px;
   }
 }
-
 
 /*makes an anchor inactive(not clickable)*/
 
