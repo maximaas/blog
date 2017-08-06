@@ -45,7 +45,8 @@
       this.field('category');
       this.field('content');
     });
-
+		alert(idx);
+		
     for (var key in window.store) { // Add the data to lunr
     	alert(window.store[key].title);
       idx.add({
