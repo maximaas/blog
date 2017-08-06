@@ -2,13 +2,13 @@
 mainmenu:
   home:
     url: "/"
-    text: "Home"
+    text: " "
     icon_class: "fa-home"
   category:
     url: "/"
-    text: "Category"
+    text: " "
     icon_class: "fa-list-ul"
   aboutme:
     url: "/about/"
-    text: "About"
+    text: " "
     icon_class: "fa-info-circle"
