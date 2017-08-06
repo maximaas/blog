@@ -173,9 +173,14 @@ a {
 .label-tag{
   background-color: #002e62;
 }
+
 .blog-header{
 	margin-bottom: 30px;
 	padding-top: 24px;
 	padding-bottom: 24px;
   background-color: #f8f8f8
+}
+
+.sidebar-block {
+	margin-bottom: 5px;
 }
