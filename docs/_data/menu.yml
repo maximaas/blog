@@ -4,6 +4,10 @@ mainmenu:
     url: "/"
     text: "Home"
     icon_class: "fa-home"
+  category:
+    url: "/"
+    text: "Category"
+    icon_class: "fa-list-ul"
   aboutme:
     url: "/about/"
     text: "About"

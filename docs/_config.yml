@@ -2,7 +2,7 @@
 title: Blog
 email: mingzo@gmail.com
 description: "Maximaas Blog"
-logo_location: "/blog/assets/images/logo.png"
+logo_location: "/blog/assets/images/logo.png" #"https://placeholdit.imgix.net/~text?txtsize=30&bg=F8F8F8&txtclr=002E62&txt=LOGO&w=100&h=100"
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site
