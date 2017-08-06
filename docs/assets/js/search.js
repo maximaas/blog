@@ -12,7 +12,7 @@
         
         
 				appendString += '      <div class=\"blog-short\">';
-				appendString += '          <h3><a href=\"{{site.baseurl}}' + item.url + '\">' + item.title + '</a></h3>'
+				appendString += '          <h3><a href=\"/blog/' + item.url + '\">' + item.title + '</a></h3>'
 
 				appendString += '      </div>';
         
