@@ -58,7 +58,8 @@ body {
   border-bottom:1px solid #ddd;
   padding-bottom:30px;
   display: table;
-width: 100%;
+	
+	width: 100%;
 }
 .blog-short .excerpt{
   min-height:100px;
@@ -211,5 +212,5 @@ a {
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 18px;
+    font-size: 20px;
 }
