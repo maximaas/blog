@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="sidebar well well-sm">
-	    <div class="sidebar-block"><h3>Latest posts</h3></div>
+	    <div class="sidebar-block"><h3>Latest posts:</h3></div>
 	    <ul>
 	        {% for post in site.posts limit:10 %}
 	          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
