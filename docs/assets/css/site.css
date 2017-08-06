@@ -182,6 +182,10 @@ a {
 	margin-bottom: 5px;
 }
 
+.sidebar-block  h1, h2, h3, h4, h5, h6 {
+	margin-top: 10px;
+}
+
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
