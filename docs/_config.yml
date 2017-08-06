@@ -1,48 +1,31 @@
-title: Famicom Reproduction
-description: Recording of my Famicom/NES reproduction work.
-author: Maximaas
-github: https://github.com/maximass
-about: A old school retro freak.
-disqus_shortname: fcrepro
-avatar_url: static/img/logo.png
+markdown: kramdown
+highlighter: pygments
+permalink: /posts/:title.html
+excerpt_separator: "<!-- more -->"
 
-enableTags: true
-tagarray: []
+github: panxw
+author: "潘学文"
+email: winfirm#163.com
+name: "潘学文个人博客"
+url: http://www.panxw.com
+domain: www.panxw.com
+all_categories: [
+["android", "Android开发","/posts/android.html"], 
+["program", "软件编程","/posts/program.html"],
+["web", "Web建站","/posts/web.html"], 
+["linux", "Linux相关","/posts/linux.html"],
+["read", "读书笔记","/posts/read.html"], 
+["other", "杂记","/posts/other.html"],
+["about", "关于","/about.html"]
+]
+
+paginate: 8
+paginate_path: "posts/page:num"
+timezone: America/Los_Angeles
 
 collections:
-  project:
+  docs:
     output: true
-    permalink: /project/:path/
 
-social:
-    - icon: fa-google
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/maximaas"
-
-share:
-  twitter_username: agu1smakmun6
-  fb_appid: 17497818565247320
-
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
-
-url: "https://maximaas.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
-markdown: kramdown
 gems:
-  - jekyll-paginate
-  - jekyll-gist
-
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+ - jekyll-paginate
