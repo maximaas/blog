@@ -1,22 +1,20 @@
-Jekyll博客模板
-================
+# README #
 
-#### 1.浏览
-http://www.panxw.com, 支持PC与智能机访问。  
+A simple blog template for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.
 
-#### 2.模板使用
-修改_config.yml与_includes目录下相关文件进行配置。  
-模板可任意使用，但请保留本站**友情链接**。  
+Uses:
+* Twitter Bootstrap 3.2.0
+* Font Awesome 4.2.0
 
-#### 3.联系作者
-Email: winfirm(#)163.com  
-QQ交流群: 168563980  
 
-#### 4.赞助
-想给作者予以鼓励？欢迎打赏吧。  
-支付宝:  
-<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_alipay.jpg"/>
+Here is a <a href="http://itsrifat.github.io/rifyll/" target="_blank">Demo</a>
 
-微信:  
-<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_weixin.jpg"/>
+To get started:
+* Fork this repo
+* Edit [_config.yml](_config.yml):
+  * Change logo_location
+* Edit [_data/menu.yml](_data/menu.yml) to edit menu
+* Edit [_data/personal.yml](_data/personal.yml) to edit persnoal info to show in about me page.
 
+To create a post:
+* Create a **.md** or **.markdown** file in the _post directory. Add a thumbnail image for the post in the yml front matter, its shown as the post thumbnail in the homepage
