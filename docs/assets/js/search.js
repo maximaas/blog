@@ -60,8 +60,8 @@
       this.field('author');
       this.field('category');
       this.field('content');
-      this.field('date');
       this.field('excerpt');
+      this.field('date');
       
     	for (var key in window.store) { // Add the data to lunr
 	      this.add({
@@ -70,8 +70,8 @@
 	        'author': window.store[key].author,
 	        'category': window.store[key].category,
 	        'content': window.store[key].content,
-	        'date': window.store[key].date,
-	        'excerpt': window.store[key].excerpt
+	        'excerpt': window.store[key].excerpt,
+	        'date': window.store[key].date
       	});
       }
     });
