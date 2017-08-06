@@ -12,8 +12,17 @@
         
         
 				appendString += '      <div class=\"blog-short\">';
-				appendString += '          <h3><a href=\"/blog/' + item.url + '\">' + item.title + '</a></h3>'
-
+				appendString += '          <h3><a href=\"/blog' + item.url + '\">' + item.title + '</a></h3>';
+				appendString += '				<div>';
+				appendString += '					<small>';
+				appendString += '						<i class="fa fa-calendar"></i>';
+				appendString += '						<time>';
+				appendString += 							item.date;
+				appendString += '						</time>';
+				appendString += '					</small>';
+				appendString += '				</div>';
+				appendString += '        <article class="excerpt">' + {{item.excerpt}} + '</article>';
+				appendString += '      </div>
 				appendString += '      </div>';
         
         
@@ -42,7 +51,6 @@
   var searchTerm = getQueryVariable('query');
 
   if (searchTerm) {
-  	alert(searchTerm);
     document.getElementById('search-box').setAttribute("value", searchTerm);
 
     // Initalize lunr with the fields it will be searching on. I've given title
@@ -53,6 +61,8 @@
       this.field('author');
       this.field('category');
       this.field('content');
+      this.field('date');
+      this.field('excerpt');
       
     	for (var key in window.store) { // Add the data to lunr
 	      this.add({
@@ -60,14 +70,14 @@
 	        'title': window.store[key].title,
 	        'author': window.store[key].author,
 	        'category': window.store[key].category,
-	        'content': window.store[key].content
+	        'content': window.store[key].content,
+	        'date': window.store[key].date
+	        'excerpt': window.store[key].excerpt
       	});
       }
     });
-		alert(idx);
 		
     var results = idx.search(searchTerm); // Get lunr to perform a search
-    alert(results.length);
     displaySearchResults(results, window.store); // We'll write this in the next section
   }
 })();
