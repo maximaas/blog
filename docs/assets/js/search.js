@@ -70,7 +70,7 @@
 	        'author': window.store[key].author,
 	        'category': window.store[key].category,
 	        'content': window.store[key].content,
-	        'date': window.store[key].date
+	        'date': window.store[key].date,
 	        'excerpt': window.store[key].excerpt
       	});
       }
