@@ -186,11 +186,6 @@ a {
 	margin-top: 0px;
 }
 
-.search-results .block-short{
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -227,4 +222,9 @@ a {
 
 #custom-search-input button{
     outline:none;
+}
+
+#search-results .block-short{
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
