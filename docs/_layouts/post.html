@@ -9,29 +9,28 @@ layout: default
 				<div class="container">
 				  <div class="row">
 				    <div class="col-xs-9 col-sm-9 col-md-offset-0 col-md-8 col-lg-offset-0 col-lg-8">
-      <div class="page">
+				      <div class="page">
 
-        <header class="page-header">
-          <h3 class="page-title"><a href="{{page.url|prepend: site.baseurl}}">{{ page.title }}</a></h3>
-          <div class="post-metadata">
-            <div> <i class="fa fa-calendar"></i>
-              <time>
-                {{ page.date | date:'%A, %B %d, %Y'}}
-              </time>
-            </div>
-            <div> <i class="fa fa-tag"></i>
-                {% for tag in page.tags %}
-                  <span class="label label-tag">{{tag}}</span>
-                {% endfor %}
-            </div>
-          </div>
+				        <header class="page-header">
+				          <h3 class="page-title"><a href="{{page.url|prepend: site.baseurl}}">{{ page.title }}</a></h3>
+				          <div class="post-metadata">
+				            <div> <i class="fa fa-calendar"></i>
+				              <time>
+				                {{ page.date | date:'%A, %B %d, %Y'}}
+				              </time>
+				            </div>
+				            <div> <i class="fa fa-tag"></i>
+				                {% for tag in page.tags %}
+				                  <span class="label label-tag">{{tag}}</span>
+				                {% endfor %}
+				            </div>
+				          </div>
+				        </header>
 
-        </header>
-
-        <article class="page-content">
-          {{ content }}
-        </article>
-      </div>
+				        <article class="page-content">
+				          {{ content }}
+				        </article>
+				      </div>
 				    </div>
 				  	<div class="col-xs-3 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
 				  		{% include sidebar.html %}
