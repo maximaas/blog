@@ -52,7 +52,8 @@
 	        'author': window.store[key].author,
 	        'category': window.store[key].category,
 	        'content': window.store[key].content
-      });
+      	});
+      }
     });
 		alert(idx);
 		
