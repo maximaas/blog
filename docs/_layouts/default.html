@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+<body>
+
+  {% include header.html %}
+  
+  <div class="row">
+      <div class="col-md-3 hidden-xs">
+          {% include sidebar.html %}
+      </div>
+      <div class="col-md-9">
+       
+      </div>
+  </div>
+  
+  {% include footer.html%}
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--<script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script> -->
+  <script src="{{ "/assets/js/site.js" | prepend: site.baseurl }}"></script>
+
+</body>
+
+</html>
