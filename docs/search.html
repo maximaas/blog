@@ -46,7 +46,6 @@ layout: default
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
-        "excerpt": "{{ post.excerpt | xml_escape }}",
         "date": "{{ post.date | date:'%A, %B %d, %Y' | xml_escape}}"
       }
       {% unless forloop.last %},{% endunless %}

@@ -21,7 +21,6 @@
 				appendString += '						</time>';
 				appendString += '					</small>';
 				appendString += '				</div>';
-				appendString += '        <article class=\"excerpt\">' + item.excerpt + '</article>';
 				appendString += '      </div>';
         
         
@@ -60,7 +59,6 @@
       this.field('author');
       this.field('category');
       this.field('content');
-      this.field('excerpt');
       this.field('date');
       
     	for (var key in window.store) { // Add the data to lunr
@@ -70,7 +68,6 @@
 	        'author': window.store[key].author,
 	        'category': window.store[key].category,
 	        'content': window.store[key].content,
-	        'excerpt': window.store[key].excerpt,
 	        'date': window.store[key].date
       	});
       }
