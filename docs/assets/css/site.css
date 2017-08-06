@@ -158,6 +158,8 @@ background-color:#0e76a8;
 
 .container h1,h2,h3,h4,h5,h6{
     color: #002e62;
+    
+    margin-top: 10px;
 }
 a{
  color: #002e62;
