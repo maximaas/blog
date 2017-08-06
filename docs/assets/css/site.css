@@ -218,4 +218,5 @@ a {
 
 #custom-search-input .glyphicon-search{
     font-size: 18px;
+    outline:none;
 }
