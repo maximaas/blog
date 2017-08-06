@@ -197,7 +197,7 @@ a {
 #custom-search-input input{
     border: 0;
     box-shadow: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #custom-search-input button{
@@ -217,5 +217,5 @@ a {
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 20px;
+    font-size: 18px;
 }
