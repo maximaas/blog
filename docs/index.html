@@ -30,7 +30,7 @@ layout: default
 				          <small>
 				            <i class="fa fa-tag"></i>
 				            {% for category in post.categories %}
-				              <a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category | first }}" title="view {{ category | first }} posts"><span class="label label-tag">{{category}}</span></a>
+				              <a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category }}" title="view {{ category }} posts"><span class="label label-tag">{{category}}</span></a>
 				            {% endfor %}
 				          </small>
 				        </div>
