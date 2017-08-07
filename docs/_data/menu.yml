@@ -1,9 +1,9 @@
 
 mainmenu:
-  home:
-    url: "/"
-    text: " "
-    icon_class: "fa-home"
+#  home:
+#    url: "/"
+#    text: " "
+#    icon_class: "fa-home"
   category:
     url: "/"
     text: " "
