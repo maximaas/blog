@@ -12,7 +12,7 @@
         
         
 				appendString += '      <div class=\"blog-short\">';
-				appendString += '          <h3><a href=\"/blog' + item.url + '\">' + item.title + '</a></h3>';
+				appendString += '          <h2><a href=\"/blog' + item.url + '\">' + item.title + '</a></h2>';
 				appendString += '				<div>';
 				appendString += '					<small>';
 				appendString += '						<i class=\"fa fa-calendar\"></i>';

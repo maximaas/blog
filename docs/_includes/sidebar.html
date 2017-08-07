@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="sidebar well well-sm">
-	    <div class="sidebar-block"><h4>Category:</h4></div>
+	    <div class="sidebar-block"><h3>Category:</h3></div>
 	    <ul>
 			    {% for category in site.categories %}
 			    <li><a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category | first }}" title="view {{ category | first }} posts">{{ category | first }}  ({{ category | last | size }})</a></li>
@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="sidebar well well-sm">
-	    <div class="sidebar-block"><h4>Latest posts:</h4></div>
+	    <div class="sidebar-block"><h3>Latest posts:</h3></div>
 	    <ul>
 	        {% for post in site.posts limit:10 %}
 	          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
