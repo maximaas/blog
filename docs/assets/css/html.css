@@ -90,13 +90,12 @@ p, ul, ol, table, pre, dl {
 
 p {
   line-height: 1.9;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-indent: 2em;
 }
 
 p > img {
   margin-left:-2em;
-  text-align: center;
 }
 
 code, pre {
