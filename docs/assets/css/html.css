@@ -93,7 +93,7 @@ p {
 }
 
 p > img {
-  text-indent: -2em;
+  margin-left:-2em;
 }
 
 code, pre {
