@@ -17,6 +17,7 @@ layout: default
 				    <div class="col-xs-9 col-sm-9 col-md-offset-0 col-md-8 col-lg-offset-0 col-lg-8">
 				      {% for post in site.posts %}
 				      <div class="blog-short">
+				      <div>
 				          <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
 								<div>
 									<small>
@@ -42,7 +43,10 @@ layout: default
 					        </div>
 					      {% endif %}
 					        <article class="excerpt">{{post.excerpt}}</article>
-									<a class="pull-right marginBottom10" href="{{post.url | prepend: site.baseurl }}">Read More</a>
+					        
+					    </div>
+					    <div><a class="pull-right marginBottom10" href="{{post.url | prepend: site.baseurl }}">Read More</a></div>
+									
 				      </div>
 				    {% endfor %}
 				    </div>
