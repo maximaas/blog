@@ -34,8 +34,7 @@ a {
 }
 
 a:hover, a:focus {
-  color:#069;
-  font-weight: bold;
+  color:#428bca;
   text-decoration:none;
 }
 
