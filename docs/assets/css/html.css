@@ -92,6 +92,13 @@ p {
   text-indent: 2em;
 }
 
+p > img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color:#333;
