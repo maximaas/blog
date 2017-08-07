@@ -17,7 +17,7 @@
 	    <div class="sidebar-block"><h4>Category:</h4></div>
 	    <ul>
 			    {% for category in site.categories %}
-			    <li><a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category | first }}" title="view all posts">{{ category | first }}  ({{ category | last | size }})</a></li>
+			    <li><a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category | first }}" title="view {{ category | first }} posts">{{ category | first }}  ({{ category | last | size }})</a></li>
 			    {% endfor %}
 	    </ul>
 	</div>
