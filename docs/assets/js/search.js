@@ -104,6 +104,8 @@
 	  }
   
 	}
-  displaySearchResults(results, window.store); // We'll write this in the next section
+
+	if (results)
+  		displaySearchResults(results, window.store); // We'll write this in the next section
   
 })();
