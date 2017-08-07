@@ -161,23 +161,23 @@ background-color:#0e76a8;
   width: 100%;
 }
 
-.container h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     color: #222;
 }
 
-.container h1,h2,h3{
-    line-height:1.1;
+h1,h2,h3{
+    line-height:1.2;
 }
 
-.container h1 {
+h1 {
   font-size:28px;
 }
 
-.container h2 {
+h2 {
   color:#393939;
 }
 
-.container h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   color:#494949;
 }
 
@@ -189,6 +189,7 @@ a {
 a:hover, a:focus {
   color:#069;
   font-weight: bold;
+  text-decoration:none;
 }
 
 a small {
