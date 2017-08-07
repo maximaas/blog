@@ -50,8 +50,6 @@
 
 	var category = getQueryVariable('category');
 	if (category) {
-    document.getElementById('search-box').setAttribute("value", searchTerm);
-
     // Initalize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
     var idx = lunr(function () {
@@ -76,34 +74,34 @@
 	}
   else {
   
-  var searchTerm = getQueryVariable('query');
-  if (searchTerm) {
-    document.getElementById('search-box').setAttribute("value", searchTerm);
+	  var searchTerm = getQueryVariable('query');
+	  if (searchTerm) {
+	    document.getElementById('search-box').setAttribute("value", searchTerm);
 
-    // Initalize lunr with the fields it will be searching on. I've given title
-    // a boost of 10 to indicate matches on this field are more important.
-    var idx = lunr(function () {
-      this.field('id');
-      this.field('title', { boost: 10 });
-      this.field('author');
-      this.field('category');
-      this.field('content');
-      this.field('date');
-      
-    	for (var key in window.store) { // Add the data to lunr
-	      this.add({
-	        'id': key,
-	        'title': window.store[key].title,
-	        'author': window.store[key].author,
-	        'category': window.store[key].category,
-	        'content': window.store[key].content,
-	        'date': window.store[key].date
-      	});
-      }
-    });
-		
-    results = idx.search(searchTerm); // Get lunr to perform a search
-  }
+	    // Initalize lunr with the fields it will be searching on. I've given title
+	    // a boost of 10 to indicate matches on this field are more important.
+	    var idx = lunr(function () {
+	      this.field('id');
+	      this.field('title', { boost: 10 });
+	      this.field('author');
+	      this.field('category');
+	      this.field('content');
+	      this.field('date');
+	      
+	    	for (var key in window.store) { // Add the data to lunr
+		      this.add({
+		        'id': key,
+		        'title': window.store[key].title,
+		        'author': window.store[key].author,
+		        'category': window.store[key].category,
+		        'content': window.store[key].content,
+		        'date': window.store[key].date
+	      	});
+	      }
+	    });
+			
+	    results = idx.search(searchTerm); // Get lunr to perform a search
+	  }
   
 	}
   displaySearchResults(results, window.store); // We'll write this in the next section
