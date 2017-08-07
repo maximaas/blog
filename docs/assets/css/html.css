@@ -34,19 +34,19 @@ a {
 }
 
 a:hover, a:focus {
-  color:#428bca;
+  color:#3fa757;
   text-decoration:none;
 }
 
 a small {
   font-size:11px;
-  color:#428bca;
+  color:#777;
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#428bca;
+  color:#777;
 }
 
 .wrapper {
