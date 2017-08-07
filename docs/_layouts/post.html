@@ -26,8 +26,8 @@ layout: default
 				              </time>
 				            </div>
 				            <div> <i class="fa fa-tag"></i>
-				            {% for category in page.categories %}
-				              <a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category }}" title="view {{ category }} posts"><span class="label label-tag">{{category}}</span></a>
+				            {% for tag in page.tags %}
+				              <a href="{{ "/search.html" | prepend: site.baseurl }}?tag={{ tag }}" title="view {{ tag }} posts"><span class="label label-tag">{{tag}}</span></a>
 				            {% endfor %}
 				            </div>
 				          </div>

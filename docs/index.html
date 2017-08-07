@@ -29,8 +29,8 @@ layout: default
 						    <div class="margin10">
 				          <small>
 				            <i class="fa fa-tag"></i>
-				            {% for category in post.categories %}
-				              <a href="{{ "/search.html" | prepend: site.baseurl }}?category={{ category }}" title="view {{ category }} posts"><span class="label label-tag">{{category}}</span></a>
+				            {% for tag in post.tags %}
+				              <a href="{{ "/search.html" | prepend: site.baseurl }}?tag={{ tag }}" title="view {{ tag }} posts"><span class="label label-tag">{{tag}}</span></a>
 				            {% endfor %}
 				          </small>
 				        </div>
