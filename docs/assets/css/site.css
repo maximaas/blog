@@ -180,16 +180,12 @@ a {
   background-color: #002e62;
 }
 
-.font-white{
-	color: #ffffff;
-	font-size: 24px;
-}
-
 .blog-header{
 	margin-bottom: 30px;
 	padding-top: 24px;
 	padding-bottom: 24px;
-  background-image: url(/blog/assets/images/banner.png);
+  background-color: #f8f8f8;
+  -background-image: url(/blog/assets/images/banner.png);
 }
 
 .sidebar ul {
