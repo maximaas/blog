@@ -18,31 +18,37 @@ h1,h2,h3{
 
 h1 {
   font-size:28px;
+  font-weight: bold;
 }
 
 h2 {
   font-size:1.5em;
   color:#393939;
+  font-weight: bold;
 }
 
 h3 {
   font-size:1.17em;
   color:#494949;
+  font-weight: bold;
 }
 
 h4 {
   font-size:1em;
   color:#494949;
+  font-weight: bold;
 }
 
 h5 {
   font-size:0.83em;
   color:#494949;
+  font-weight: bold;
 }
 
 h6 {
   font-size:0.67em;
   color:#494949;
+  font-weight: bold;
 }
 
 a {
