@@ -180,6 +180,10 @@ a {
   background-color: #002e62;
 }
 
+.font-white{
+	color:white;
+}
+
 .blog-header{
 	margin-bottom: 30px;
 	padding-top: 24px;
