@@ -40,13 +40,13 @@ a:hover, a:focus {
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#428bca;
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:#428bca;
 }
 
 .wrapper {
