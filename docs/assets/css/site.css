@@ -96,6 +96,10 @@ body {
     list-style: none;
 }
 
+.banner {
+    background-image: url(/blog/assets/images/banner.png);
+}
+
 /* social buttons */
 /*social buttons */
 .social-btn-holder{
