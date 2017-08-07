@@ -181,7 +181,8 @@ a {
 }
 
 .font-white{
-	color:white;
+	color: #ffffff;
+	font-size: 24px;
 }
 
 .blog-header{
