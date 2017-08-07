@@ -57,15 +57,15 @@ body {
 /*blog stuff */
 .blog-short{
   border-bottom:1px solid #ddd;
- -- padding-top:20px;
-  padding-bottom:30px;
+  padding-top:20px;
+  padding-bottom:10px;
   display: table;
 	
 	width: 100%;
 }
 
 .blog-short .excerpt{
-  min-height:100px;
+  min-height:130px;
 }
 
 .margin10{
