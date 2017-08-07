@@ -66,6 +66,10 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+p {
+  text-indent: 2em;
+}
+
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color:#333;
