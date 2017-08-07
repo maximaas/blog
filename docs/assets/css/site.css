@@ -57,8 +57,8 @@ body {
 /*blog stuff */
 .blog-short{
   border-bottom:1px solid #ddd;
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top:20px;
+  padding-bottom:10px;
   display: table;
 	
 	width: 100%;
@@ -232,6 +232,6 @@ a {
 }
 
 #search-results .blog-short{
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
