@@ -112,6 +112,10 @@ pre {
   overflow-x: auto;
 }
 
+blockquote {
+  font-size: 14px;
+}
+
 table {
   width:100%;
   border-collapse:collapse;
