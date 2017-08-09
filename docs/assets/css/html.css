@@ -81,7 +81,8 @@ blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
   padding:0 0 0 20px;
-  font-style:italic;
+  font-style:normal;
+  font-size: 14px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -110,10 +111,6 @@ pre {
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow-x: auto;
-}
-
-blockquote {
-  font-size: 14px;
 }
 
 table {
