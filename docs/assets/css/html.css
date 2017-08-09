@@ -85,6 +85,12 @@ blockquote {
   font-size: 14px;
 }
 
+blockquote ol:last-child, 
+blockquote p:last-child, 
+blockquote ul:last-child {
+    margin-bottom: 20px;
+}
+
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
