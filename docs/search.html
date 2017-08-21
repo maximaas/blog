@@ -54,7 +54,7 @@ layout: default
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
-        "tag": "{{ post.tag | xml_escape }}",
+        "tags": "{{ post.tags | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
@@ -65,7 +65,7 @@ layout: default
   };
   
 	for (var key in window.store) {
-    alert(window.store[key].title + '-' + window.store[key].author + '-' + window.store[key].tag + '-' + window.store[key].date);
+    alert(window.store[key].title + '-' + window.store[key].author + '-' + window.store[key].tags + '-' + window.store[key].date);
   }
   
 </script>

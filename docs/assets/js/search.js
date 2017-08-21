@@ -79,7 +79,7 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('category');
+      this.field('tags');
       this.field('date');
       
     	for (var key in window.store) { // Add the data to lunr
@@ -87,7 +87,7 @@
 	        'id': key,
 	        'title': window.store[key].title,
 	        'author': window.store[key].author,
-	        'tag': window.store[key].tag,
+	        'tags': window.store[key].tags,
 	        'date': window.store[key].date
       	});
       }
