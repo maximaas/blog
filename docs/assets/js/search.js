@@ -48,6 +48,7 @@
 
 	var results = "";
 
+	var tag = getQueryVariable('tag');
 	var category = getQueryVariable('category');
 	if (category) {
     // Initalize lunr with the fields it will be searching on. I've given title
@@ -71,6 +72,28 @@
     });
 		
     results = idx.search(category); // Get lunr to perform a search
+    displaySearchResults(results, window.store); // We'll write this in the next section
+	}
+	else if (tag)  {
+    var idx = lunr(function () {
+      this.field('id');
+      this.field('title', { boost: 10 });
+      this.field('author');
+      this.field('category');
+      this.field('date');
+      
+    	for (var key in window.store) { // Add the data to lunr
+	      this.add({
+	        'id': key,
+	        'title': window.store[key].title,
+	        'author': window.store[key].author,
+	        'category': window.store[key].category,
+	        'date': window.store[key].date
+      	});
+      }
+    });
+		
+    results = idx.search(tag); // Get lunr to perform a search
     displaySearchResults(results, window.store); // We'll write this in the next section
 	}
   else {

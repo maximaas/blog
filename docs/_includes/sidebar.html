@@ -26,7 +26,16 @@
 	    <div class="sidebar-block"><h3>Latest posts:</h3></div>
 	    <ul>
 	        {% for post in site.posts limit:10 %}
-	          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+	          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.short }}</a></li>
 	        {% endfor %}
+	    </ul>
+	</div>
+	
+	<div class="sidebar well well-sm">
+	    <div class="sidebar-block"><h3>Tags:</h3></div>
+	    <ul>
+			    {% for tag in site.tags %}
+			    <li><a href="{{ "/search.html" | prepend: site.baseurl }}?tag={{ tag | first }}" title="view {{ tag | first }} posts">{{ tag | first }}  ({{ tag | last | size }})</a></li>
+			    {% endfor %}
 	    </ul>
 	</div>
