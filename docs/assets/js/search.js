@@ -93,7 +93,7 @@
       }
     });
 		
-    results = idx.search(tag); // Get lunr to perform a search
+    results = idx.search('*'+tag+'*'); // Get lunr to perform a search
     displaySearchResults(results, window.store); // We'll write this in the next section
 	}
   else {
