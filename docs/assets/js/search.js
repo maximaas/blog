@@ -87,7 +87,7 @@
 	        'id': key,
 	        'title': window.store[key].title,
 	        'author': window.store[key].author,
-	        'tags': window.store[key].tags,
+	        'tag': window.store[key].tags,
 	        'date': window.store[key].date
       	});
       }
