@@ -23,7 +23,7 @@
       error.url = res.url;
       throw error;
     }).then((json) => {
-        comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">评论和留言 <span class=\"pull-right margin10 btn\"><a href="${issue_url}">点此留言...</a></span></h3>`);
+        comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">评论和留言 <span class=\"pull-right margin10\" style=\"font-size: 14px;\"><a href="${issue_url}">点此留言...</a></span></h3>`);
 
         for (let comment of json) {
           let date = new Date(comment.created_at);
