@@ -16,7 +16,6 @@ layout: default
 				  <div class="row">
 				    <div class="col-xs-9 col-sm-9 col-md-offset-0 col-md-8 col-lg-offset-0 col-lg-8">
 				      <div class="page">
-
 				        <header class="page-header">
 				          <h2 class="page-title">{{ page.title }}</h2>
 				          <div class="post-metadata">
@@ -36,11 +35,11 @@ layout: default
 				        <article class="page-content">
 				          {{ content }}
 				        </article>
+				        
+						    <div>
+		            	{% include comments.html %}
+		        		</div>
 				      </div>
-
-					    <div>
-	            	{% include comments.html %}
-	        		</div>
 	        						      
 					    <div class="go-home centered-text">
 	            	<a href="/blog/"><i class="fa fa-home"></i></a>
