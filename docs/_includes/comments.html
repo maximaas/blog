@@ -28,11 +28,12 @@
         for (let comment of json) {
           let date = new Date(comment.created_at);
           let c = '<div class="comment">' +
+          		'<div style="border-bottom: 1px dotted #ddd;">' +
               `<img src="${comment.user.avatar_url}" width="24px"> ` +
               `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
               ' posted at ' +
               `<time>${date.toUTCString()}</time>` +
-              '<hr style=\"border: 1px dashed #ddd;\" />' +
+              '</div>' +
               comment.body_html +
               '</div>';
           comments.insertAdjacentHTML('beforeend', c);
