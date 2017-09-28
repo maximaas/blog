@@ -22,6 +22,11 @@
   padding-top:20px;
 }
 
+.comments-header{
+	margin-bottom:10px;
+	border-bottom: 1px solid #ddd;
+}
+
 .well {
 	background-color: #f8f8f8;
 }
