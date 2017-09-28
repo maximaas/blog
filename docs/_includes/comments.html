@@ -1,0 +1,46 @@
+<div class="comments" data-comment-id="{{post.issue_id}}" data-title="{{ post.title }}"></div>
+<script type="text/javascript">
+  (function (){
+    if (!'{{post.issue_id}}') return false;
+    var gh_comments = document.getElementsByClassName('comments')[0];
+    var a = document.createElement('a');
+    a.href = '{{config.github_issues}}';
+    var gh_api = 'https://api.github.com/repos' + a.pathname;
+    var gh_issue_id = '{{post.issue_id}}';
+    var gh_issue_url = a.href +  '/' + gh_issue_id;
+    var gh_comments_url = gh_api + '/' + gh_issue_id + '/comments';
+    fetch(gh_comments_url, {
+      headers: new Headers({
+        'Accept': 'application/vnd.github.v3.html+json',
+        'Content-Type': 'application/json'
+      }),
+      method: 'GET'
+    }).then((res) => {
+      if (res.status == 200) return res.json();
+      let error = new Error('HTTP Exception[GET]');
+      error.status = res.status;
+      error.statusText = res.statusText;
+      error.url = res.url;
+      throw error;
+    }).then((json) => {
+        gh_comments.insertAdjacentHTML('afterbegin', `<h3>GitHub Comments</h3>
+          <p>Visit the <a href="${gh_issue_url}">GitHub Issue</a> to comment on this post.</p>`);
+
+        for (let comment of json) {
+          let date = new Date(comment.created_at);
+          let c = '<div class="gh-comment">' +
+              `<img src="${comment.user.avatar_url}" width="24px"> ` +
+              `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
+              ' posted at ' +
+              `<time>${date.toUTCString()}</time>` +
+              '<hr>' +
+              comment.body_html +
+              '</div>';
+          gh_comments.insertAdjacentHTML('beforeend', c);
+        }
+    }).catch((err) => {
+      gh_comments.insertAdjacentHTML('afterbegin', `<h3>GitHub Comments</h3>
+        <p>Comments are not open for this post yet</p>`);
+    });
+  })();
+</script>
