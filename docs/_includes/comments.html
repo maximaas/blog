@@ -23,8 +23,7 @@
       error.url = res.url;
       throw error;
     }).then((json) => {
-        comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">Comments</h3>
-          <p>Visit the <a href="${issue_url}">GitHub Issue</a> to comment on this post.</p>`);
+        comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">Comments</h3> <span>(<a href="${issue_url}">Write a new comment</a>)</span>`);
 
         for (let comment of json) {
           let date = new Date(comment.created_at);
@@ -39,8 +38,7 @@
           comments.insertAdjacentHTML('beforeend', c);
         }
     }).catch((err) => {
-      comments.insertAdjacentHTML('afterbegin', `<h3>Comments</h3>
-        <p>Comments are not open for this post yet</p>`);
+      comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">Comments</h3> <span>(Comments are not open for this post yet)</span>`);
     });
   })();
 </script>
