@@ -32,7 +32,7 @@
               `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
               ' posted at ' +
               `<time>${date.toUTCString()}</time>` +
-              '<hr/>' +
+              '<hr style=\"border-top: 0px;border-bottom: dotted 1px #ddd\" />' +
               comment.body_html +
               '</div>';
           comments.insertAdjacentHTML('beforeend', c);
