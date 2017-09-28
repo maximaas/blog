@@ -16,6 +16,12 @@
   margin: 0;
 }
 
+.comments{
+  margin: 10px 0;
+  text-align:left;
+  padding-bottom:15px;
+}
+
 .well {
 	background-color: #f8f8f8;
 }
