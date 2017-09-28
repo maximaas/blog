@@ -10,7 +10,7 @@
     var issue_id = '{{page.issue_id}}';
     var issue_url = a.href +  '/' + issue_id;
     var comments_url = api + '/' + issue_id + '/comments';
-    alert(api);
+    alert(comments_url);
     fetch(comments_url, {
       headers: new Headers({
         'Accept': 'application/vnd.github.v3.html+json',
