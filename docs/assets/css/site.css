@@ -31,7 +31,8 @@
 }
 
 .comment{
-  margin: 10px 0;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align:left;
   padding-top:20px;
 }
