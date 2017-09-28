@@ -4,9 +4,9 @@
     if (!'{{page.issue_id}}') return false;
     var comments = document.getElementsByClassName('comments')[0];
     var a = document.createElement('a');
-    a.href = '{{config.github_issues}}';
+    a.href = '{{config.issues_url}}';
     var api = 'https://api.github.com/repos' + a.pathname;
-    var issue_id = '{{post.issue_id}}';
+    var issue_id = '{{page.issue_id}}';
     var issue_url = a.href +  '/' + issue_id;
     var comments_url = api + '/' + issue_id + '/comments';
     fetch(comments_url, {

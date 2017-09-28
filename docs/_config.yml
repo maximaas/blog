@@ -7,6 +7,8 @@ logo_location: "/blog/assets/images/logo.png" #"https://placeholdit.imgix.net/~t
 baseurl: "/" # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site
 
+issues_url: "https://github.com/maximaas/blog/issues"
+
 # Build settings
 markdown: kramdown
 kramdown:
