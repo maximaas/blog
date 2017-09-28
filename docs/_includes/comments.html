@@ -6,6 +6,7 @@
     var a = document.createElement('a');
     a.href = '{{site.issues_url}}';
     var api = 'https://api.github.com/repos' + a.pathname;
+    alert(api);
     var issue_id = '{{page.issue_id}}';
     var issue_url = a.href +  '/' + issue_id;
     var comments_url = api + '/' + issue_id + '/comments';
@@ -28,7 +29,7 @@
 
         for (let comment of json) {
           let date = new Date(comment.created_at);
-          let c = '<div class="gh-comment">' +
+          let c = '<div class="comment">' +
               `<img src="${comment.user.avatar_url}" width="24px"> ` +
               `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
               ' posted at ' +
