@@ -4,7 +4,7 @@
     if (!'{{page.issue_id}}') return false;
     var comments = document.getElementsByClassName('comments')[0];
     var a = document.createElement('a');
-    a.href = '{{config.issues_url}}';
+    a.href = '{{site.issues_url}}';
     var api = 'https://api.github.com/repos' + a.pathname;
     var issue_id = '{{page.issue_id}}';
     var issue_url = a.href +  '/' + issue_id;
