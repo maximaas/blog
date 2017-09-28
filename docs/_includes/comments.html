@@ -24,20 +24,25 @@
       throw error;
     }).then((json) => {
         comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>评论和留言 <span class=\"pull-right margin10\" style=\"font-size: 14px;font-weight: 400;\"><a href="${issue_url}">点此留言...</a></span></h3></div>`);
+				if (comments.length) {
+	        for (let comment of json) {
+	          let date = new Date(comment.created_at);
+	          let c = '<div class="comment">' +
+	          		'<div style="border-bottom: 1px dotted #ddd;">' +
+	              `<img src="${comment.user.avatar_url}" width="24px"> ` +
+	              `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
+	              ' posted at ' +
+	              `<time>${date.toUTCString()}</time>` +
+	              '</div>' +
+	              comment.body_html +
+	              '</div>';
+	          comments.insertAdjacentHTML('beforeend', c);
+	        }
+				}
+				else {
+					comments.insertAdjacentHTML('beforeend', '暂无评论');
+				}
 
-        for (let comment of json) {
-          let date = new Date(comment.created_at);
-          let c = '<div class="comment">' +
-          		'<div style="border-bottom: 1px dotted #ddd;">' +
-              `<img src="${comment.user.avatar_url}" width="24px"> ` +
-              `<a href="${comment.user.html_url}">${comment.user.login}</a>` +
-              ' posted at ' +
-              `<time>${date.toUTCString()}</time>` +
-              '</div>' +
-              comment.body_html +
-              '</div>';
-          comments.insertAdjacentHTML('beforeend', c);
-        }
     }).catch((err) => {
       comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">Comments</h3> <span>(Comments are not open for this post yet)</span>`);
     });
