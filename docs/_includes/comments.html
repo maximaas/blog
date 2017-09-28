@@ -25,7 +25,7 @@
       error.url = res.url;
       throw error;
     }).then((json) => {
-        comments.insertAdjacentHTML('afterbegin', `<h3>GitHub Comments</h3>
+        comments.insertAdjacentHTML('afterbegin', `<h3>Comments</h3>
           <p>Visit the <a href="${issue_url}">GitHub Issue</a> to comment on this post.</p>`);
 
         for (let comment of json) {
