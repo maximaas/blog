@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 .page{
-  border-bottom:1px solid #aaa;
+  border-bottom:1px solid #ccc;
   margin: 10px 0;
   text-align:left;
   padding-bottom:25px;
@@ -23,7 +23,7 @@
 }
 
 .comments-header{
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #ccc;
 }
 
 .comments-header h3{
@@ -76,7 +76,7 @@
 
 /*blog stuff */
 .blog-short{
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #ccc;
   padding-top:25px;
   padding-bottom:10px;
   display: table;
