@@ -50,6 +50,6 @@
 				}
 
     }).catch((err) => {
-      comments.insertAdjacentHTML('afterbegin', `<h3 style=\"border-bottom: 1px solid #ddd;\">Comments</h3> <span>(Comments are not open for this post yet)</span>`);
+      comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>ÆÀÂÛºÍÁôÑÔ <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\">(Comments are not open for this post yet)</span></h3></div>`);
     });
   }
