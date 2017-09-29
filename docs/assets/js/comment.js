@@ -25,7 +25,7 @@
       error.url = res.url;
       throw error;
     }).then((json) => {
-        comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>评论和留言 <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\"><a href="${issue_url}" target="_blank">点此留言...</a></span></h3></div>`);
+        comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>璇勮鍜岀暀瑷� <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\"><a href="${issue_url}" target="_blank">鐐规鐣欒█...</a></span></h3></div>`);
         
         var count = 0;
         
@@ -46,10 +46,10 @@
         }
 				
 				if (count == 0) {
-					comments.insertAdjacentHTML('beforeend', '<div class="comment">暂无评论</div>');
+					comments.insertAdjacentHTML('beforeend', '<div class="comment">鏆傛棤璇勮</div>');
 				}
 
     }).catch((err) => {
-      comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>评论和留言 <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\">(Comments are not open for this post yet)</span></h3></div>`);
+      comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>璇勮鍜岀暀瑷� <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\">(Comments are not open for this post yet)</span></h3></div>`);
     });
   }
