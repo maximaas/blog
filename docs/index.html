@@ -43,10 +43,10 @@ layout: default
 					      {% endif %}
 					        <article class="excerpt">{{post.excerpt}}</article>
 									<span class="pull-right margin10">
-										<a href="#"><span class="commentsCount"></span> comments</a> / <a href="{{post.url | prepend: site.baseurl }}">Read More</a>
+										<a href="#"><span class="comments{{post.issue_id}}Count"></span> comments</a> / <a href="{{post.url | prepend: site.baseurl }}">Read More</a>
 
 <script type="text/javascript">
-	getCommentsCount('{{post.issue_id}}', '{{site.issues_url}}', 'commentsCount');
+	getCommentsCount('{{post.issue_id}}', '{{site.issues_url}}', 'comments{{post.issue_id}}Count');
 </script>		
 
 									</span>
