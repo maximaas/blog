@@ -42,7 +42,10 @@ layout: default
 					        </div>
 					      {% endif %}
 					        <article class="excerpt">{{post.excerpt}}</article>
-									<a class="pull-right margin10" href="{{post.url | prepend: site.baseurl }}">Read More</a>
+									<span class="pull-right margin10">
+										<a href="{{post.url | prepend: site.baseurl }}">Read More</a> | <a href="{{post.url | prepend: site.baseurl }}">Comments()</a>
+									</span>
+									
 				      </div>
 				    {% endfor %}
 				    
