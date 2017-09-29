@@ -51,7 +51,7 @@
     });
   }
   
-  function getCommentsCount(issue_id, target) {
+  function getCommentsCount(issue_id, issues_url, target) {
 		if (!issue_id) return false;
 		
     var comments = document.getElementsByClassName(target)[0];
