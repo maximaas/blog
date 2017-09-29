@@ -74,8 +74,8 @@
       error.url = res.url;
       throw error;
     }).then((json) => {
-    	alert(${json.comments});
-      comments.insertAdjacentHTML('afterbegin', ${json.comments});
+    	alert(json.comments);
+      comments.insertAdjacentHTML('afterbegin', '${json.comments}');
     }).catch((err) => {
       comments.insertAdjacentHTML('afterbegin', `0`);
     });
