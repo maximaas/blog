@@ -76,6 +76,6 @@
     }).then((json) => {
       comments.insertAdjacentHTML('afterbegin', json.comments);
     }).catch((err) => {
-      comments.insertAdjacentHTML('afterbegin', `no`);
+      comments.insertAdjacentHTML('afterbegin', err.statusText);
     });
   }
