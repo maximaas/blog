@@ -1,14 +1,14 @@
 
 	
-  function getComments(issue_id, target) {
+  function getComments(issue_id, issues_url, target) {
 		if (!issue_id) return false;
 		
     var comments = document.getElementsByClassName(target)[0];
     var a = document.createElement('a');
-    a.href = '{{site.issues_url}}';
+    a.href = issues_url;
     var api = 'https://api.github.com/repos' + a.pathname;
-    var issue_id = '{{page.issue_id}}';
-    var issue_url = '{{site.issues_url}}' +  '/' + issue_id;
+    var issue_id = issue_id;
+    var issue_url = 'issues_url' +  '/' + issue_id;
     var comments_url = api + '/' + issue_id + '/comments';
     
     fetch(comments_url, {
