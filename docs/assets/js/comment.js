@@ -58,7 +58,7 @@
     var a = document.createElement('a');
     a.href = issues_url;
     var api = 'https://api.github.com/repos' + a.pathname;
-    var issue_url = issues_url +  '/' + issue_id;
+    var issue_url = api + '/' + issue_id;
 
     fetch(issue_url, {
       headers: new Headers({
@@ -76,6 +76,6 @@
     }).then((json) => {
       comments.insertAdjacentHTML('afterbegin', json.comments);
     }).catch((err) => {
-      comments.insertAdjacentHTML('afterbegin', err.statusText);
+      comments.insertAdjacentHTML('afterbegin', 'no');
     });
   }
