@@ -1,5 +1,3 @@
-
-	
   function getComments(issue_id, issues_url, target) {
 		if (!issue_id) return false;
 		
@@ -7,7 +5,6 @@
     var a = document.createElement('a');
     a.href = issues_url;
     var api = 'https://api.github.com/repos' + a.pathname;
-    var issue_id = issue_id;
     var issue_url = issues_url +  '/' + issue_id;
     var comments_url = api + '/' + issue_id + '/comments';
     
@@ -51,5 +48,34 @@
 
     }).catch((err) => {
       comments.insertAdjacentHTML('afterbegin', `<div class=\"comments-header\"><h3>评论和留言 <span class=\"pull-right\" style=\"font-size: 14px;font-weight: 400;\">(Comments are not open for this post yet)</span></h3></div>`);
+    });
+  }
+  
+  function getCommentsCount(issue_id, target) {
+		if (!issue_id) return false;
+		
+    var comments = document.getElementsByClassName(target)[0];
+    var a = document.createElement('a');
+    a.href = issues_url;
+    var api = 'https://api.github.com/repos' + a.pathname;
+    var issue_url = issues_url +  '/' + issue_id;
+
+    fetch(issue_url, {
+      headers: new Headers({
+        'Accept': 'application/vnd.github.v3.html+json',
+        'Content-Type': 'application/json'
+      }),
+      method: 'GET'
+    }).then((res) => {
+      if (res.status == 200) return res.json();
+      let error = new Error('HTTP Exception[GET]');
+      error.status = res.status;
+      error.statusText = res.statusText;
+      error.url = res.url;
+      throw error;
+    }).then((json) => {
+      comments.insertAdjacentHTML('afterbegin', `${json.comments}`);
+    }).catch((err) => {
+      comments.insertAdjacentHTML('afterbegin', `0`);
     });
   }
