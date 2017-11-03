@@ -239,7 +239,7 @@ function ppu_transfer(d, start, end, ppu_banksize)
 }
 ```
 
-所有改造工作完成，上机测试一下：
+所有改造工作完成，上机测试一下，音效完美，WRAM正常，游戏烧录和切换正常。
 
 ![image](/blog/assets/images/posts/20171103/20.jpg)
 
