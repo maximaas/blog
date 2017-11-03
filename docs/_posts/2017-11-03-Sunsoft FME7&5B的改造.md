@@ -30,13 +30,17 @@ Gimmick是mapper69，用的Sunsoft-5B芯片，这个芯片和其他mapper69的fm
 
 先列出所有的参考文档：
 
-韩国人改造FME7的帖子，只改造了flash：http://blog.naver.com/PostView.nhn?blogId=xsnake&logNo=220336838247
+韩国人改造FME7的帖子，只改造了flash：<br/>
+http://blog.naver.com/PostView.nhn?blogId=xsnake&logNo=220336838247
 
-德国人利用8912改造的文章，这个质量最高：https://jensma.de/nesrepro/gimmick
+德国人利用8912改造的文章，这个质量最高：<br/>
+https://jensma.de/nesrepro/gimmick
 
-NesDev关于改造音源的讨论帖，改造电路图就出自这里：http://forums.nesdev.com/viewtopic.php?t=3480
+NesDev关于改造音源的讨论帖，改造电路图就出自这里：<br/>
+http://forums.nesdev.com/viewtopic.php?t=3480
 
-音源改造前后的对比：https://www.youtube.com/watch?v=BWmK5tqEgks
+音源改造前后的对比：<br/>
+https://www.youtube.com/watch?v=BWmK5tqEgks
 
 
 ## 改造CHR
