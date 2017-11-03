@@ -2,7 +2,7 @@
 layout: post
 tags: fc reproduction Sunsoft-FME7 Sunsoft-5B Gimmick
 date: 2017-11-03 16:45
-thumbnail: /blog/assets/images/posts/20171009/00.jpg
+thumbnail: /blog/assets/images/posts/20171103/00.jpg
 short: Sunsoft FME7&5B的改造
 title: Gimmick——Sunsoft FME7&5B的改造
 issue_id: 14
