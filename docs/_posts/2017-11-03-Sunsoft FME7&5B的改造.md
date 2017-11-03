@@ -110,7 +110,7 @@ Gimmick是用不到WRAM的，但mapper69的游戏中蝙蝠侠2是需要的。为
 
 ![image](/blog/assets/images/posts/20171103/14.png)
 
-按照上面的接法改造即可。
+按照上面的接法改造即可，原电路中有几个82nf的接地电容，根据实际情况来看，没有也不影响实际效果。
 
 ![image](/blog/assets/images/posts/20171103/15.jpg)
 
