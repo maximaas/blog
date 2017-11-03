@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: fc reproduction Sunsoft-FME7 Sunsoft-5B Gimmick
+tags: fc reproduction Sunsoft-FME7 Sunsoft-5B Gimmick AY-3-8910 AY-3-8912
 date: 2017-11-03 16:45
 thumbnail: /blog/assets/images/posts/20171103/00.jpg
 short: Sunsoft FME7&5B的改造
