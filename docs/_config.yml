@@ -1,7 +1,7 @@
 # Site settings
 title: Maximaas' Blog
 email: mingzo@gmail.com
-description: "Recording of my hobby work"
+description: "My Hobby Work"
 logo_location: "/blog/assets/images/logo.png" #"https://placeholdit.imgix.net/~text?txtsize=30&bg=F8F8F8&txtclr=002E62&txt=LOGO&w=100&h=100"
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
@@ -22,4 +22,4 @@ exclude: ['README.md']
 excerpt_separator: <!--more-->
 
 #show the jumbotron header on index page
-show_blog_header: false
+show_blog_header: true
