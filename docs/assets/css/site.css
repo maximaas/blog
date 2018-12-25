@@ -79,7 +79,7 @@
 /*blog stuff */
 .blog-short{
   border-bottom:1px solid #ccc;
-  padding-top:25px;
+  padding-top:15px;
   padding-bottom:10px;
   display: table;
 	
@@ -257,6 +257,6 @@ background-color:#0e76a8;
 }
 
 #search-results .blog-short{
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-bottom: 20px;
 }
