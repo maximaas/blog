@@ -49,7 +49,7 @@ Super-FX芯片分为GSU-1和GSU-2前后两个版本，核心频率都是21MHz，
 
 ![image](/blog/assets/images/posts/20210220/05.jpg)
 
-SRAM的A15针脚不要焊接，必须悬空！
+SRAM的A15针脚不要焊到电路板上，必须悬空！
 
 ![image](/blog/assets/images/posts/20210220/06.jpg)
 
@@ -69,15 +69,15 @@ SRAM的A15针脚不要焊接，必须悬空！
 
 ![image](/blog/assets/images/posts/20210220/09.jpg)
 
-从侧面看一下，板子与板子之间贴合的非常平整。
+从侧面看板子与板子之间贴合的非常平整。
+这里提醒一下，下层的转接板因为和焊在Mask ROM的焊盘上，并且焊盘很小，所以在设计上一定要用1mm的薄板，否则焊锡不一定能顺畅通过焊孔流动到Mask ROM焊盘上。
 
 ![image](/blog/assets/images/posts/20210220/10.jpg)
 
 再解释一下eeprom的烧录。因为不像FC卡带改造有kazzo烧录器可以使用，我们只能先用编程器把芯片烧好，再进行焊接，所以最后上机的时候才发现烧录的内容有问题就只能拆芯片返工了。
 
 我们计划制作火狐1+2合卡，所以要先合并两个ROM为一个文件，使用windows的copy命令来实现，方法如下：
-
-c:\> copy /B "StarFox1.sfc" + "StarFox2.sfc" "StarFox.sfc"
+c:\\> copy /B "StarFox1.sfc" + "StarFox2.sfc" "StarFox.sfc"
 
 一定要加/B参数，这样才会按照二进制文件来处理，本质上就是把两个文件合并在一起，1MB+1MB=2MB。
 
@@ -103,6 +103,7 @@ AM29F016D是比较常见的芯片，编程器自带的烧录程序通常都支�
 ![image](/blog/assets/images/posts/20210220/14.jpg)
 
 我们烧录的文件是两个ROM的合并文件，火狐1在前1MB空间，火狐2在后1MB空间，通过切换eeprom最高位的电平就可以实现游戏的选择。我在转接板上预留了两个跳线A20和A21，转接板是兼容AM29F016D和AM29F032D的，而AM29F016D的最高位是A20，A21为空，所以在A20、VCC和GND之间安装一个开关实现切换。
+说明一下，上面图片和之前的不一样，是因为我前后改过两盘卡，上图是第二盘，多出的两条飞线是因为我失手破坏了两个Mask ROM焊盘，后期只能用飞线来补救，正常情况不需要额外飞线。
 
 ![image](/blog/assets/images/posts/20210220/15.jpg)
 
@@ -122,7 +123,7 @@ AM29F016D是比较常见的芯片，编程器自带的烧录程序通常都支�
 mask rom和sram的针脚定义：[SFC - MASKROM.txt](https://github.com/maximaas/Famicom-DIY/blob/master/repro/SFC - MASKROM.txt)
 
 转接板的eagle文件：<br/>
-[https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.sch](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.sch)
-[https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.brd](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.brd)
-[https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.sch](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.sch)
-[https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.brd](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.brd)
+[FlashAdapter_sfc.sch](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.sch)
+[FlashAdapter_sfc.brd](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/FlashAdapter_sfc.brd)
+[SfcDip2SoicAdapter.sch](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.sch)
+[SfcDip2SoicAdapter.brd](https://github.com/maximaas/Famicom-DIY/blob/master/repro/schematics/FlashAdapter/SfcDip2SoicAdapter.brd)
