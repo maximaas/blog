@@ -33,7 +33,7 @@ Super-FX芯片分为GSU-1和GSU-2前后两个版本，核心频率都是21MHz，
 
 拆开卡带后可以看见中间的Super-FX2芯片，编号为GSU-2-SP1。在左侧是存储游戏ROM的Mask ROM，上方则是256Kbit的SRAM，而根据我们从模拟器中看到的信息，StarFox2的SRAM是512Kbit。所以本次改造的任务就主要分为了Mask Rom改造；SRAM改造；以及最后电池座的改造了。
 
-![image](/blog/assets/images/posts/20210220/03.png)
+![image](/blog/assets/images/posts/20210220/03.jpg)
 
 动手之前最好先了解一下Super-FX芯片的针脚定义，后面会用到。[http://problemkaputt.de/fullsnes.htm#snespinoutsgsuchips](http://problemkaputt.de/fullsnes.htm#snespinoutsgsuchips)
 
